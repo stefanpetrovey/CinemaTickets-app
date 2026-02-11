@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Register Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+  <!-- Optional JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+
+  <style>
+    body, html {
+      height: 100%;
+      background-color: #f8f9fa;
+    }
+
+    .form-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-signin {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .form-signin-heading {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .btn-block + .btn-block {
+      margin-top: 10px;
+    }
+
+    .jumbotron-heading {
+      font-size: 2.5rem;
+    }
+
+    .jumbotron {
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container form-container">
+  </section>
+  <form class="form-signin" method="post" action="/register">
+    <h2 class="form-signin-heading">Create an Account</h2>
+
+    <div class="form-group">
+      <label for="username" class="sr-only">Username</label>
+      <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password" class="sr-only">Password</label>
+      <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="repeatedPassword" class="sr-only">Repeat Password</label>
+      <input type="password" id="repeatedPassword" name="repeatedPassword" class="form-control" placeholder="Repeat Password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="sr-only">Name</label>
+      <input type="text" id="name" name="name" class="form-control" placeholder="First Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="surname" class="sr-only">Surname</label>
+      <input type="text" id="surname" name="surname" class="form-control" placeholder="Last Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="dateOfBirth" class="sr-only">Date of Birth</label>
+      <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" required>
+    </div>
+
+    <th:block th:if="${hasError}">
+      <div th:text="${error}" class="text-danger mb-3 text-center"></div>
+    </th:block>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+    <a href="/login" class="btn btn-block btn-light mt-3">Already have an account? Login here!</a>
+  </form>
+</div>
+</body>
+</html>
