@@ -62,7 +62,6 @@ CinemaTicket-web-app/
 - Maven 3.6+
 - Git
 ```
-
 Access the application:
 
 http://localhost:9091/movies
@@ -104,6 +103,10 @@ The application uses Spring Security with:
 
 ### Movies List Page
 The main page displays all available movies with their details, ratings, and production companies. Users can select dates, choose ticket quantities, and add items to their cart.
+<img width="1919" height="1020" alt="Screenshot 2026-02-11 190308" src="https://github.com/user-attachments/assets/2c026955-02f9-40cd-88b5-d81e99819871" />
+<img width="1919" height="1017" alt="Screenshot 2026-02-11 190329" src="https://github.com/user-attachments/assets/fae498a9-85ab-47b8-bfc9-44a11b431383" />
+<img width="1919" height="1013" alt="Screenshot 2026-02-11 190347" src="https://github.com/user-attachments/assets/90fa5c9d-a332-49c6-95bc-bb68fb451483" />
+<img width="1919" height="1014" alt="Screenshot 2026-02-11 190408" src="https://github.com/user-attachments/assets/b2d4678c-4d92-4979-98c7-533061c00bbb" />
 
 ## Future Enhancements
 
